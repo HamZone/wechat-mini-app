@@ -11,8 +11,8 @@ Page({
   message (e) {
     var that = this
     that.shareData = {
-      title: e.detail.data[0].title,
-      path: "pages/share/share?shareUrl=" +e.detail.data[0].path
+      title: e.detail.data[e.detail.data.length-1].title,
+      path: "pages/share/share?shareUrl=" +e.detail.data[e.detail.data.length-1].path
     }
   }
 })
